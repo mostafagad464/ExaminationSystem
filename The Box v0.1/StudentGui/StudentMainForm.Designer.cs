@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.HdrPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LeftPanel = new System.Windows.Forms.Panel();
-            this.ImagePanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.ShowMessage = new System.Windows.Forms.Label();
-            this.WelcPanel = new System.Windows.Forms.Panel();
-            this.StudentName = new System.Windows.Forms.Label();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.CloseAppbtn = new System.Windows.Forms.Button();
             this.Minimize = new System.Windows.Forms.Button();
             this.MaximizeAppbtn = new System.Windows.Forms.Button();
             this.CloseFormbtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.LeftPanel = new System.Windows.Forms.Panel();
+            this.ImagePanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Course_Label = new System.Windows.Forms.Button();
             this.Grade_label = new System.Windows.Forms.Button();
             this.Exam_label = new System.Windows.Forms.Button();
             this.InfoStudent_label = new System.Windows.Forms.Button();
+            this.ShowMessage = new System.Windows.Forms.Label();
             this.MainImage = new System.Windows.Forms.PictureBox();
             this.SignoutBtn = new System.Windows.Forms.Button();
+            this.WelcPanel = new System.Windows.Forms.Panel();
+            this.StudentName = new System.Windows.Forms.Label();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.HdrPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.LeftPanel.SuspendLayout();
             this.ImagePanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.WelcPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainImage)).BeginInit();
+            this.WelcPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // HdrPanel
@@ -68,99 +68,6 @@
             this.HdrPanel.Name = "HdrPanel";
             this.HdrPanel.Size = new System.Drawing.Size(850, 78);
             this.HdrPanel.TabIndex = 4;
-            this.HdrPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HdrPanel_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Controls.Add(this.LeftPanel);
-            this.panel1.Controls.Add(this.WelcPanel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(190, 600);
-            this.panel1.TabIndex = 3;
-            // 
-            // LeftPanel
-            // 
-            this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(82)))));
-            this.LeftPanel.Controls.Add(this.ImagePanel);
-            this.LeftPanel.Controls.Add(this.SignoutBtn);
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LeftPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(82)))));
-            this.LeftPanel.Location = new System.Drawing.Point(0, 78);
-            this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(190, 522);
-            this.LeftPanel.TabIndex = 1;
-            // 
-            // ImagePanel
-            // 
-            this.ImagePanel.Controls.Add(this.panel2);
-            this.ImagePanel.Controls.Add(this.MainImage);
-            this.ImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImagePanel.Location = new System.Drawing.Point(0, 0);
-            this.ImagePanel.Name = "ImagePanel";
-            this.ImagePanel.Size = new System.Drawing.Size(190, 462);
-            this.ImagePanel.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panel2.Controls.Add(this.Course_Label);
-            this.panel2.Controls.Add(this.Grade_label);
-            this.panel2.Controls.Add(this.Exam_label);
-            this.panel2.Controls.Add(this.InfoStudent_label);
-            this.panel2.Controls.Add(this.ShowMessage);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 462);
-            this.panel2.TabIndex = 2;
-            // 
-            // ShowMessage
-            // 
-            this.ShowMessage.AutoSize = true;
-            this.ShowMessage.Font = new System.Drawing.Font("Trebuchet MS", 12.25F, System.Drawing.FontStyle.Bold);
-            this.ShowMessage.ForeColor = System.Drawing.Color.White;
-            this.ShowMessage.Location = new System.Drawing.Point(183, 124);
-            this.ShowMessage.Name = "ShowMessage";
-            this.ShowMessage.Size = new System.Drawing.Size(396, 23);
-            this.ShowMessage.TabIndex = 23;
-            this.ShowMessage.Text = "Will be array of Labels defined with size of array";
-            // 
-            // WelcPanel
-            // 
-            this.WelcPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.WelcPanel.Controls.Add(this.StudentName);
-            this.WelcPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WelcPanel.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.WelcPanel.Location = new System.Drawing.Point(0, 0);
-            this.WelcPanel.Name = "WelcPanel";
-            this.WelcPanel.Size = new System.Drawing.Size(190, 78);
-            this.WelcPanel.TabIndex = 0;
-            // 
-            // StudentName
-            // 
-            this.StudentName.AutoSize = true;
-            this.StudentName.Font = new System.Drawing.Font("Trebuchet MS", 20F);
-            this.StudentName.Location = new System.Drawing.Point(12, 22);
-            this.StudentName.Name = "StudentName";
-            this.StudentName.Size = new System.Drawing.Size(176, 35);
-            this.StudentName.TabIndex = 1;
-            this.StudentName.Text = "studentName";
-            this.StudentName.Click += new System.EventHandler(this.StudentName_Click);
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MainPanel.BackgroundImage = global::The_Box_v0._1.Properties.Resources.iti_logo;
-            this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.MainPanel.CausesValidation = false;
-            this.MainPanel.Location = new System.Drawing.Point(190, 78);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(850, 522);
-            this.MainPanel.TabIndex = 5;
             // 
             // CloseAppbtn
             // 
@@ -214,6 +121,54 @@
             this.CloseFormbtn.Size = new System.Drawing.Size(26, 25);
             this.CloseFormbtn.TabIndex = 2;
             this.CloseFormbtn.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Controls.Add(this.LeftPanel);
+            this.panel1.Controls.Add(this.WelcPanel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(190, 600);
+            this.panel1.TabIndex = 3;
+            // 
+            // LeftPanel
+            // 
+            this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(82)))));
+            this.LeftPanel.Controls.Add(this.ImagePanel);
+            this.LeftPanel.Controls.Add(this.SignoutBtn);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LeftPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(82)))));
+            this.LeftPanel.Location = new System.Drawing.Point(0, 78);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.Size = new System.Drawing.Size(190, 522);
+            this.LeftPanel.TabIndex = 1;
+            // 
+            // ImagePanel
+            // 
+            this.ImagePanel.Controls.Add(this.panel2);
+            this.ImagePanel.Controls.Add(this.MainImage);
+            this.ImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImagePanel.Location = new System.Drawing.Point(0, 0);
+            this.ImagePanel.Name = "ImagePanel";
+            this.ImagePanel.Size = new System.Drawing.Size(190, 462);
+            this.ImagePanel.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panel2.Controls.Add(this.Course_Label);
+            this.panel2.Controls.Add(this.Grade_label);
+            this.panel2.Controls.Add(this.Exam_label);
+            this.panel2.Controls.Add(this.InfoStudent_label);
+            this.panel2.Controls.Add(this.ShowMessage);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(190, 462);
+            this.panel2.TabIndex = 2;
             // 
             // Course_Label
             // 
@@ -295,6 +250,17 @@
             this.InfoStudent_label.UseVisualStyleBackColor = true;
             this.InfoStudent_label.Click += new System.EventHandler(this.InfoStudent_label_Click);
             // 
+            // ShowMessage
+            // 
+            this.ShowMessage.AutoSize = true;
+            this.ShowMessage.Font = new System.Drawing.Font("Trebuchet MS", 12.25F, System.Drawing.FontStyle.Bold);
+            this.ShowMessage.ForeColor = System.Drawing.Color.White;
+            this.ShowMessage.Location = new System.Drawing.Point(183, 124);
+            this.ShowMessage.Name = "ShowMessage";
+            this.ShowMessage.Size = new System.Drawing.Size(396, 23);
+            this.ShowMessage.TabIndex = 23;
+            this.ShowMessage.Text = "Will be array of Labels defined with size of array";
+            // 
             // MainImage
             // 
             this.MainImage.Location = new System.Drawing.Point(0, 0);
@@ -324,6 +290,38 @@
             this.SignoutBtn.UseVisualStyleBackColor = true;
             this.SignoutBtn.Click += new System.EventHandler(this.SignoutBtn_Click_1);
             // 
+            // WelcPanel
+            // 
+            this.WelcPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.WelcPanel.Controls.Add(this.StudentName);
+            this.WelcPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WelcPanel.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.WelcPanel.Location = new System.Drawing.Point(0, 0);
+            this.WelcPanel.Name = "WelcPanel";
+            this.WelcPanel.Size = new System.Drawing.Size(190, 78);
+            this.WelcPanel.TabIndex = 0;
+            // 
+            // StudentName
+            // 
+            this.StudentName.AutoSize = true;
+            this.StudentName.Font = new System.Drawing.Font("Trebuchet MS", 20F);
+            this.StudentName.Location = new System.Drawing.Point(12, 22);
+            this.StudentName.Name = "StudentName";
+            this.StudentName.Size = new System.Drawing.Size(176, 35);
+            this.StudentName.TabIndex = 1;
+            this.StudentName.Text = "studentName";
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MainPanel.BackgroundImage = global::The_Box_v0._1.Properties.Resources.iti_logo;
+            this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MainPanel.CausesValidation = false;
+            this.MainPanel.Location = new System.Drawing.Point(190, 78);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(850, 522);
+            this.MainPanel.TabIndex = 5;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,9 +343,9 @@
             this.ImagePanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MainImage)).EndInit();
             this.WelcPanel.ResumeLayout(false);
             this.WelcPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MainImage)).EndInit();
             this.ResumeLayout(false);
 
         }
