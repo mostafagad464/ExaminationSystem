@@ -28,18 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.HdrPanel = new System.Windows.Forms.Panel();
             this.CloseAppbtn = new System.Windows.Forms.Button();
             this.Minimize = new System.Windows.Forms.Button();
             this.MaximizeAppbtn = new System.Windows.Forms.Button();
             this.CloseFormbtn = new System.Windows.Forms.Button();
-            this.boxLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.SignoutBtn = new System.Windows.Forms.Button();
-            this.WelcPanel = new System.Windows.Forms.Panel();
-            this.Player_Name = new System.Windows.Forms.Label();
             this.ImagePanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Course_Label = new System.Windows.Forms.Button();
@@ -48,34 +43,26 @@
             this.InfoStudent_label = new System.Windows.Forms.Button();
             this.ShowMessage = new System.Windows.Forms.Label();
             this.MainImage = new System.Windows.Forms.PictureBox();
+            this.SignoutBtn = new System.Windows.Forms.Button();
+            this.WelcPanel = new System.Windows.Forms.Panel();
+            this.StudentName = new System.Windows.Forms.Label();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.HdrPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.LeftPanel.SuspendLayout();
-            this.WelcPanel.SuspendLayout();
             this.ImagePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainImage)).BeginInit();
+            this.WelcPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MainPanel.BackgroundImage = global::The_Box_v0._1.Properties.Resources.student_Main_Image;
-            this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MainPanel.CausesValidation = false;
-            this.MainPanel.Location = new System.Drawing.Point(190, 78);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(850, 522);
-            this.MainPanel.TabIndex = 5;
             // 
             // HdrPanel
             // 
-            this.HdrPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.HdrPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.HdrPanel.Controls.Add(this.CloseAppbtn);
             this.HdrPanel.Controls.Add(this.Minimize);
             this.HdrPanel.Controls.Add(this.MaximizeAppbtn);
             this.HdrPanel.Controls.Add(this.CloseFormbtn);
-            this.HdrPanel.Controls.Add(this.boxLabel);
             this.HdrPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.HdrPanel.Location = new System.Drawing.Point(190, 0);
             this.HdrPanel.Name = "HdrPanel";
@@ -135,19 +122,6 @@
             this.CloseFormbtn.TabIndex = 2;
             this.CloseFormbtn.UseVisualStyleBackColor = true;
             // 
-            // boxLabel
-            // 
-            this.boxLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.boxLabel.AutoSize = true;
-            this.boxLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.boxLabel.Font = new System.Drawing.Font("Trebuchet MS", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(82)))));
-            this.boxLabel.Location = new System.Drawing.Point(346, 9);
-            this.boxLabel.Name = "boxLabel";
-            this.boxLabel.Size = new System.Drawing.Size(249, 59);
-            this.boxLabel.TabIndex = 1;
-            this.boxLabel.Text = "Connect 4";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
@@ -171,47 +145,6 @@
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.Size = new System.Drawing.Size(190, 522);
             this.LeftPanel.TabIndex = 1;
-            // 
-            // SignoutBtn
-            // 
-            this.SignoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SignoutBtn.FlatAppearance.BorderSize = 0;
-            this.SignoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignoutBtn.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignoutBtn.ForeColor = System.Drawing.Color.White;
-            this.SignoutBtn.Image = global::The_Box_v0._1.Properties.Resources.logout;
-            this.SignoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SignoutBtn.Location = new System.Drawing.Point(0, 462);
-            this.SignoutBtn.Name = "SignoutBtn";
-            this.SignoutBtn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.SignoutBtn.Size = new System.Drawing.Size(190, 60);
-            this.SignoutBtn.TabIndex = 3;
-            this.SignoutBtn.Text = "  SignOut";
-            this.SignoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SignoutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SignoutBtn.UseVisualStyleBackColor = true;
-            this.SignoutBtn.Click += new System.EventHandler(this.SignoutBtn_Click_1);
-            // 
-            // WelcPanel
-            // 
-            this.WelcPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.WelcPanel.Controls.Add(this.Player_Name);
-            this.WelcPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WelcPanel.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.WelcPanel.Location = new System.Drawing.Point(0, 0);
-            this.WelcPanel.Name = "WelcPanel";
-            this.WelcPanel.Size = new System.Drawing.Size(190, 78);
-            this.WelcPanel.TabIndex = 0;
-            // 
-            // Player_Name
-            // 
-            this.Player_Name.AutoSize = true;
-            this.Player_Name.Font = new System.Drawing.Font("Trebuchet MS", 20F);
-            this.Player_Name.Location = new System.Drawing.Point(12, 22);
-            this.Player_Name.Name = "Player_Name";
-            this.Player_Name.Size = new System.Drawing.Size(167, 35);
-            this.Player_Name.TabIndex = 1;
-            this.Player_Name.Text = "Player Name";
             // 
             // ImagePanel
             // 
@@ -246,10 +179,10 @@
             this.Course_Label.ForeColor = System.Drawing.Color.White;
             this.Course_Label.Image = global::The_Box_v0._1.Properties.Resources.man;
             this.Course_Label.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Course_Label.Location = new System.Drawing.Point(0, 180);
+            this.Course_Label.Location = new System.Drawing.Point(0, 121);
             this.Course_Label.Name = "Course_Label";
             this.Course_Label.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.Course_Label.Size = new System.Drawing.Size(190, 60);
+            this.Course_Label.Size = new System.Drawing.Size(190, 40);
             this.Course_Label.TabIndex = 27;
             this.Course_Label.Text = "Courses";
             this.Course_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,10 +199,10 @@
             this.Grade_label.ForeColor = System.Drawing.Color.White;
             this.Grade_label.Image = global::The_Box_v0._1.Properties.Resources.man;
             this.Grade_label.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Grade_label.Location = new System.Drawing.Point(0, 120);
+            this.Grade_label.Location = new System.Drawing.Point(0, 79);
             this.Grade_label.Name = "Grade_label";
             this.Grade_label.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.Grade_label.Size = new System.Drawing.Size(190, 60);
+            this.Grade_label.Size = new System.Drawing.Size(190, 42);
             this.Grade_label.TabIndex = 26;
             this.Grade_label.Text = "Grades";
             this.Grade_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -286,10 +219,10 @@
             this.Exam_label.ForeColor = System.Drawing.Color.White;
             this.Exam_label.Image = global::The_Box_v0._1.Properties.Resources.man;
             this.Exam_label.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Exam_label.Location = new System.Drawing.Point(0, 60);
+            this.Exam_label.Location = new System.Drawing.Point(0, 38);
             this.Exam_label.Name = "Exam_label";
             this.Exam_label.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.Exam_label.Size = new System.Drawing.Size(190, 60);
+            this.Exam_label.Size = new System.Drawing.Size(190, 41);
             this.Exam_label.TabIndex = 25;
             this.Exam_label.Text = "Exam";
             this.Exam_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -309,7 +242,7 @@
             this.InfoStudent_label.Location = new System.Drawing.Point(0, 0);
             this.InfoStudent_label.Name = "InfoStudent_label";
             this.InfoStudent_label.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.InfoStudent_label.Size = new System.Drawing.Size(190, 60);
+            this.InfoStudent_label.Size = new System.Drawing.Size(190, 38);
             this.InfoStudent_label.TabIndex = 24;
             this.InfoStudent_label.Text = "Student Info";
             this.InfoStudent_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -337,6 +270,58 @@
             this.MainImage.TabIndex = 0;
             this.MainImage.TabStop = false;
             // 
+            // SignoutBtn
+            // 
+            this.SignoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.SignoutBtn.FlatAppearance.BorderSize = 0;
+            this.SignoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignoutBtn.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignoutBtn.ForeColor = System.Drawing.Color.White;
+            this.SignoutBtn.Image = global::The_Box_v0._1.Properties.Resources.logout;
+            this.SignoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SignoutBtn.Location = new System.Drawing.Point(0, 462);
+            this.SignoutBtn.Name = "SignoutBtn";
+            this.SignoutBtn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.SignoutBtn.Size = new System.Drawing.Size(190, 60);
+            this.SignoutBtn.TabIndex = 3;
+            this.SignoutBtn.Text = "  SignOut";
+            this.SignoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SignoutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SignoutBtn.UseVisualStyleBackColor = true;
+            this.SignoutBtn.Click += new System.EventHandler(this.SignoutBtn_Click_1);
+            // 
+            // WelcPanel
+            // 
+            this.WelcPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.WelcPanel.Controls.Add(this.StudentName);
+            this.WelcPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WelcPanel.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.WelcPanel.Location = new System.Drawing.Point(0, 0);
+            this.WelcPanel.Name = "WelcPanel";
+            this.WelcPanel.Size = new System.Drawing.Size(190, 78);
+            this.WelcPanel.TabIndex = 0;
+            // 
+            // StudentName
+            // 
+            this.StudentName.AutoSize = true;
+            this.StudentName.Font = new System.Drawing.Font("Trebuchet MS", 20F);
+            this.StudentName.Location = new System.Drawing.Point(12, 22);
+            this.StudentName.Name = "StudentName";
+            this.StudentName.Size = new System.Drawing.Size(176, 35);
+            this.StudentName.TabIndex = 1;
+            this.StudentName.Text = "studentName";
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MainPanel.BackgroundImage = global::The_Box_v0._1.Properties.Resources.iti_logo;
+            this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MainPanel.CausesValidation = false;
+            this.MainPanel.Location = new System.Drawing.Point(190, 78);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(850, 522);
+            this.MainPanel.TabIndex = 5;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,15 +338,14 @@
             this.Text = "7";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.HdrPanel.ResumeLayout(false);
-            this.HdrPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.LeftPanel.ResumeLayout(false);
-            this.WelcPanel.ResumeLayout(false);
-            this.WelcPanel.PerformLayout();
             this.ImagePanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainImage)).EndInit();
+            this.WelcPanel.ResumeLayout(false);
+            this.WelcPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -374,12 +358,11 @@
         private System.Windows.Forms.Button Minimize;
         private System.Windows.Forms.Button MaximizeAppbtn;
         private System.Windows.Forms.Button CloseFormbtn;
-        private System.Windows.Forms.Label boxLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Button SignoutBtn;
         private System.Windows.Forms.Panel WelcPanel;
-        private System.Windows.Forms.Label Player_Name;
+        private System.Windows.Forms.Label StudentName;
         private System.Windows.Forms.Panel ImagePanel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Course_Label;

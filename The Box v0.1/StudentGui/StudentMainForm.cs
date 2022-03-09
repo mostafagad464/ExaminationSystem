@@ -55,13 +55,8 @@ namespace The_Box_v0._1
         //Methods
         private Color SelectThemeColor()
         {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
+           
+            string color = ThemeColor.ColorList[0];
             return ColorTranslator.FromHtml(color);
         }
 
@@ -99,7 +94,7 @@ namespace The_Box_v0._1
         {
             if (activeForm != null)
                 activeForm.Close();
-            ActivateButton(btnSender);
+          //  ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -108,7 +103,7 @@ namespace The_Box_v0._1
             this.MainPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            boxLabel.Text = childForm.Text;
+        //    boxLabel.Text = childForm.Text;
         }
 
         private void SettingBtn_Click(object sender, EventArgs e)
@@ -118,7 +113,6 @@ namespace The_Box_v0._1
 
         private void student_infoClick(object sender, EventArgs e)
         {
-            ActivateButton(sender);
             OpenChildForm(new Forms.StudentDetailsInfo(), sender);
 
 
@@ -150,7 +144,7 @@ namespace The_Box_v0._1
         private void Reset()
         {
             DisableButton();
-            boxLabel.Text = "The Box";
+            //boxLabel.Text = "Examination System";
             HdrPanel.BackColor = Color.FromArgb(0, 150, 136);
             WelcPanel.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
@@ -186,13 +180,11 @@ namespace The_Box_v0._1
 
         private void Grade_label_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
             OpenChildForm(new StudentGrades(), sender);
         }
 
         private void Course_Label_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
              OpenChildForm(new Coursescs() ,sender);
 
 
@@ -274,6 +266,11 @@ namespace The_Box_v0._1
         private void CloseAppbtn_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void boxLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

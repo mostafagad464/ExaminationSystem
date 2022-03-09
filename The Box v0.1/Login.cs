@@ -25,5 +25,10 @@ namespace The_Box_v0._1
             this.Hide();
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

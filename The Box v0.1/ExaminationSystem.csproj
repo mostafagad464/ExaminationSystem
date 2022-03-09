@@ -222,6 +222,7 @@
     <None Include="Resources\american-football-player %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\iti-logo.png" />
     <Content Include="Resources\student Main Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
