@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminGui\AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGui\AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentGui\Coursescs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
       <DependentUpon>StudentGrades.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="AdminGui\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentGui\Coursescs.resx">
       <DependentUpon>Coursescs.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,5 +234,6 @@
     <None Include="Resources\iti-logo.png" />
     <Content Include="Resources\student Main Image.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

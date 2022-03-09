@@ -272,5 +272,15 @@ namespace The_Box_v0._1
         {
 
         }
+
+        private void StudentName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HdrPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
