@@ -34,3 +34,4 @@ C:\Users\Mostafa M. Gad\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debu
 C:\Users\Mostafa M. Gad\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CopyComplete
 C:\Users\Mostafa M. Gad\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\The Box v0.1.exe
 C:\Users\Mostafa M. Gad\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\The Box v0.1.pdb
+D:\New folder\Client\The Box v0.1\obj\Debug\The_Box_v0._1.Form1.resources
