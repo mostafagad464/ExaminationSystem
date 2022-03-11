@@ -19,10 +19,19 @@ namespace The_Box_v0._1
 
         private void Log_In_Button_Click(object sender, EventArgs e)
         {
-
-            MainForm mf=     new MainForm(this);
-            mf.Show();
-            this.Hide();
+            if(InsRadioBtn.Checked == true || StuRadioBtn.Checked == true)
+            {
+                MainForm mf = new MainForm(this);
+                mf.Show();
+                this.Hide();
+            }
+            else if(AdminRadioBtn.Checked == true)
+            {
+                AdminForm adminForm = new AdminForm(this);
+                adminForm.Show();
+                this.Hide();
+            }
+            
 
         }
 

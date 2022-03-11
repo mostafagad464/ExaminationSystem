@@ -33,9 +33,7 @@ namespace The_Box_v0._1
             InitializeComponent();
             loginPage = login;
             random = new Random();
-            CloseFormbtn.Visible = false;
-  
-         
+            CloseFormbtn.Visible = false;       
         }
 
 

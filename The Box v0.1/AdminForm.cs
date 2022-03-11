@@ -12,9 +12,15 @@ namespace The_Box_v0._1
 {
     public partial class AdminForm : Form
     {
+        Login loginPage;
         public AdminForm()
         {
             InitializeComponent();
+        }
+        public AdminForm(Login login)
+        {
+            InitializeComponent();
+            loginPage = login;
         }
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
