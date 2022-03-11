@@ -54,3 +54,24 @@ C:\Users\LEGION\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\Examin
 C:\Users\LEGION\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CopyComplete
 C:\Users\LEGION\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\The Box v0.1.exe
 C:\Users\LEGION\Documents\GitHub\ExaminationSystem\The Box v0.1\obj\Debug\The Box v0.1.pdb
+D:\SQL project\The Box v0.1\bin\Debug\The Box v0.1.exe.config
+D:\SQL project\The Box v0.1\bin\Debug\The Box v0.1.exe
+D:\SQL project\The Box v0.1\bin\Debug\The Box v0.1.pdb
+D:\SQL project\The Box v0.1\bin\Debug\Newtonsoft.Json.dll
+D:\SQL project\The Box v0.1\bin\Debug\Newtonsoft.Json.xml
+D:\SQL project\The Box v0.1\obj\Debug\ExaminationSystem.csprojAssemblyReference.cache
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.AdminForm.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.instructorGUI.InstructorMainForm.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.Coursescs.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.Forms.ColorDialog.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.Forms.StudentDetailsInfo.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.Login.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.MainForm.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.Properties.Resources.resources
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.StudentGrades.resources
+D:\SQL project\The Box v0.1\obj\Debug\ExaminationSystem.csproj.GenerateResource.cache
+D:\SQL project\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CoreCompileInputs.cache
+D:\SQL project\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CopyComplete
+D:\SQL project\The Box v0.1\obj\Debug\The Box v0.1.exe
+D:\SQL project\The Box v0.1\obj\Debug\The Box v0.1.pdb
+D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.instructorGUI.InsertQ.resources

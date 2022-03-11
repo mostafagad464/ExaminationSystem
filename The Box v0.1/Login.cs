@@ -21,8 +21,11 @@ namespace The_Box_v0._1
         {
             if(InsRadioBtn.Checked == true || StuRadioBtn.Checked == true)
             {
-                MainForm mf = new MainForm(this);
-                mf.Show();
+                //MainForm mf = new MainForm(this);
+                //mf.Show();
+                //this.Hide();
+                instructorGUI.InstructorMainForm Imf = new instructorGUI.InstructorMainForm(this);
+                Imf.Show();
                 this.Hide();
             }
             else if(AdminRadioBtn.Checked == true)
