@@ -33,9 +33,7 @@ namespace The_Box_v0._1
             InitializeComponent();
             loginPage = login;
             random = new Random();
-            CloseFormbtn.Visible = false;
-  
-         
+            CloseFormbtn.Visible = false;       
         }
 
 
@@ -269,6 +267,66 @@ namespace The_Box_v0._1
         }
 
         private void boxLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void HdrPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CloseFormbtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LeftPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ImagePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ShowMessage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainImage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WelcPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void StudentName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
