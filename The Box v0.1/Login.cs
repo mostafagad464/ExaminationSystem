@@ -37,7 +37,7 @@ namespace The_Box_v0._1
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hello");
         }
     }
 }
