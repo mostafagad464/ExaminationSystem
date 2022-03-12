@@ -223,6 +223,16 @@ namespace The_Box_v0._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Letter_Q_icon {
+            get {
+                object obj = ResourceManager.GetObject("Letter-Q-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
@@ -286,6 +296,16 @@ namespace The_Box_v0._1.Properties {
         internal static System.Drawing.Bitmap play__2_ {
             get {
                 object obj = ResourceManager.GetObject("play (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Product_sale_report_icon {
+            get {
+                object obj = ResourceManager.GetObject("Product-sale-report-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
