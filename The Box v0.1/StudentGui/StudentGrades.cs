@@ -19,6 +19,7 @@ namespace The_Box_v0._1
 
         private void StudentGrades_Load(object sender, EventArgs e)
         {
+            
 
         }
 

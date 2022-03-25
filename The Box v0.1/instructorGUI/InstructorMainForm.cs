@@ -139,5 +139,10 @@ namespace The_Box_v0._1.instructorGUI
         {
             OpenChildForm(new InsertQ(), sender);
         }
+
+        private void QA_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

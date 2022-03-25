@@ -75,3 +75,29 @@ D:\SQL project\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CopyComplete
 D:\SQL project\The Box v0.1\obj\Debug\The Box v0.1.exe
 D:\SQL project\The Box v0.1\obj\Debug\The Box v0.1.pdb
 D:\SQL project\The Box v0.1\obj\Debug\The_Box_v0._1.instructorGUI.InsertQ.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\The Box v0.1.exe.config
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\The Box v0.1.exe
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\The Box v0.1.pdb
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\Newtonsoft.Json.dll
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\Newtonsoft.Json.xml
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.AssemblyReference.cache
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.SuggestedBindingRedirects.cache
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.AdminForm.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.instructorGUI.InsertQ.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.instructorGUI.InstructorMainForm.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.Coursescs.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.Forms.ColorDialog.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.Forms.StudentDetailsInfo.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.Login.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.MainForm.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.Properties.Resources.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The_Box_v0._1.StudentGrades.resources
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.GenerateResource.cache
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CoreCompileInputs.cache
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\ExaminationSystem.csproj.CopyComplete
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The Box v0.1.exe
+E:\ITI\examination\ExaminationSystem\The Box v0.1\obj\Debug\The Box v0.1.pdb
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\EntityFramework.dll
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\EntityFramework.SqlServer.dll
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\EntityFramework.xml
+E:\ITI\examination\ExaminationSystem\The Box v0.1\bin\Debug\EntityFramework.SqlServer.xml
