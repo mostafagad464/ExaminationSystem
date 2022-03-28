@@ -11,9 +11,9 @@ namespace The_Box_v0._1
 {
     using System;
     
-    public partial class sp_helpdiagramdefinition_Result
+    public partial class stud_user_pass_Result
     {
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public string Std_UserName { get; set; }
+        public string Std_Password { get; set; }
     }
 }

@@ -71,10 +71,10 @@ namespace The_Box_v0._1
             this.ExamId_label = new System.Windows.Forms.Label();
             this.mcqSpilt = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.instructorId = new System.Windows.Forms.TextBox();
-            this.idOfcourse = new System.Windows.Forms.TextBox();
             this.IdOfExam = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.CourseIdOfExam = new System.Windows.Forms.ComboBox();
+            this.instructorIDofExam = new System.Windows.Forms.ComboBox();
             this.Contaunter.SuspendLayout();
             this.StudentLabel.SuspendLayout();
             this.student_tap_control.SuspendLayout();
@@ -434,6 +434,8 @@ namespace The_Box_v0._1
             // 
             // Exams_tap
             // 
+            this.Exams_tap.Controls.Add(this.instructorIDofExam);
+            this.Exams_tap.Controls.Add(this.CourseIdOfExam);
             this.Exams_tap.Controls.Add(this.GenerateExam);
             this.Exams_tap.Controls.Add(this.label1);
             this.Exams_tap.Controls.Add(this.T_f_spilt);
@@ -445,8 +447,6 @@ namespace The_Box_v0._1
             this.Exams_tap.Controls.Add(this.ExamId_label);
             this.Exams_tap.Controls.Add(this.mcqSpilt);
             this.Exams_tap.Controls.Add(this.textBox4);
-            this.Exams_tap.Controls.Add(this.instructorId);
-            this.Exams_tap.Controls.Add(this.idOfcourse);
             this.Exams_tap.Controls.Add(this.IdOfExam);
             this.Exams_tap.Controls.Add(this.button2);
             this.Exams_tap.Location = new System.Drawing.Point(4, 22);
@@ -549,21 +549,7 @@ namespace The_Box_v0._1
             this.textBox4.Location = new System.Drawing.Point(424, 48);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(155, 20);
-            this.textBox4.TabIndex = 4;
-            // 
-            // instructorId
-            // 
-            this.instructorId.Location = new System.Drawing.Point(585, 48);
-            this.instructorId.Name = "instructorId";
-            this.instructorId.Size = new System.Drawing.Size(155, 20);
-            this.instructorId.TabIndex = 3;
-            // 
-            // idOfcourse
-            // 
-            this.idOfcourse.Location = new System.Drawing.Point(263, 48);
-            this.idOfcourse.Name = "idOfcourse";
-            this.idOfcourse.Size = new System.Drawing.Size(155, 20);
-            this.idOfcourse.TabIndex = 2;
+            this.textBox4.TabIndex = 3;
             // 
             // IdOfExam
             // 
@@ -581,6 +567,23 @@ namespace The_Box_v0._1
             this.button2.Text = "NextQ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // CourseIdOfExam
+            // 
+            this.CourseIdOfExam.FormattingEnabled = true;
+            this.CourseIdOfExam.Location = new System.Drawing.Point(266, 46);
+            this.CourseIdOfExam.Name = "CourseIdOfExam";
+            this.CourseIdOfExam.Size = new System.Drawing.Size(152, 21);
+            this.CourseIdOfExam.TabIndex = 15;
+            this.CourseIdOfExam.SelectedIndexChanged += new System.EventHandler(this.CourseIdOfExam_SelectedIndexChanged);
+            // 
+            // instructorIDofExam
+            // 
+            this.instructorIDofExam.FormattingEnabled = true;
+            this.instructorIDofExam.Location = new System.Drawing.Point(586, 46);
+            this.instructorIDofExam.Name = "instructorIDofExam";
+            this.instructorIDofExam.Size = new System.Drawing.Size(156, 21);
+            this.instructorIDofExam.TabIndex = 16;
             // 
             // AdminForm
             // 
@@ -645,8 +648,6 @@ namespace The_Box_v0._1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox mcqSpilt;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox instructorId;
-        private System.Windows.Forms.TextBox idOfcourse;
         private System.Windows.Forms.TextBox IdOfExam;
         private System.Windows.Forms.Label CourseIdLabel;
         private System.Windows.Forms.Label label5;
@@ -657,5 +658,7 @@ namespace The_Box_v0._1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox T_f_spilt;
         private System.Windows.Forms.Button GenerateExam;
+        public System.Windows.Forms.ComboBox instructorIDofExam;
+        public System.Windows.Forms.ComboBox CourseIdOfExam;
     }
 }

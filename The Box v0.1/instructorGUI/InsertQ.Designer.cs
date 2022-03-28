@@ -86,7 +86,7 @@
             this.a_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.a_label.Location = new System.Drawing.Point(414, 187);
             this.a_label.Name = "a_label";
-            this.a_label.Size = new System.Drawing.Size(16, 16);
+            this.a_label.Size = new System.Drawing.Size(15, 16);
             this.a_label.TabIndex = 3;
             this.a_label.Text = "a";
             this.a_label.Visible = false;
@@ -99,7 +99,7 @@
             this.b_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.b_label.Location = new System.Drawing.Point(415, 231);
             this.b_label.Name = "b_label";
-            this.b_label.Size = new System.Drawing.Size(16, 16);
+            this.b_label.Size = new System.Drawing.Size(15, 16);
             this.b_label.TabIndex = 4;
             this.b_label.Text = "b";
             this.b_label.Visible = false;
@@ -111,7 +111,7 @@
             this.c_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.c_label.Location = new System.Drawing.Point(415, 279);
             this.c_label.Name = "c_label";
-            this.c_label.Size = new System.Drawing.Size(15, 16);
+            this.c_label.Size = new System.Drawing.Size(14, 16);
             this.c_label.TabIndex = 5;
             this.c_label.Text = "c";
             this.c_label.Visible = false;
@@ -123,7 +123,7 @@
             this.d_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.d_label.Location = new System.Drawing.Point(414, 317);
             this.d_label.Name = "d_label";
-            this.d_label.Size = new System.Drawing.Size(16, 16);
+            this.d_label.Size = new System.Drawing.Size(15, 16);
             this.d_label.TabIndex = 6;
             this.d_label.Text = "d";
             this.d_label.Visible = false;
@@ -192,6 +192,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InsertQ";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.InsertQ_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

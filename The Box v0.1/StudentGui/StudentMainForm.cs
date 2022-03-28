@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace The_Box_v0._1
 {
-    public partial class MainForm : Form
+    public partial class StudentMainForm : Form
     {
         //Fields
         private Button currentButton;
@@ -22,13 +22,13 @@ namespace The_Box_v0._1
         Login loginPage;
 
 
-        public MainForm()
+        public StudentMainForm()
         {
             InitializeComponent();
         }
 
 
-        public MainForm(Login login)
+        public StudentMainForm(Login login,Student std )
         {
             InitializeComponent();
             loginPage = login;

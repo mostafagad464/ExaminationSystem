@@ -385,7 +385,50 @@
     <Parameter Name="crsid" Type="int" Mode="In" />
     <Parameter Name="crsname" Type="varchar" Mode="In" />
   </Function>
-  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="DeleteChoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Q_Id" Type="int" Mode="In" />
+    <Parameter Name="C_Id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="DeleteExam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteInsCrs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ins_Id" Type="int" Mode="In" />
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InsID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Q_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteStudent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteTopic" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteTrack" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DelteInsCrs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ins_Id" Type="int" Mode="In" />
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ExamAnswer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StudID" Type="int" Mode="In" />
+    <Parameter Name="ExamID" Type="int" Mode="In" />
+    <Parameter Name="QuesID" Type="int" Mode="In" />
+    <Parameter Name="StudAnswer" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ExamCorrection" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ExamNum" Type="int" Mode="In" />
+    <Parameter Name="StudID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ExamQuestionsChoicesReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Exam_Id" Type="int" Mode="In" />
+  </Function>
   <Function Name="GetChoiceOfQ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="IdOfExam" Type="int" Mode="In" />
   </Function>
@@ -397,39 +440,128 @@
     <Parameter Name="MCQSpilt" Type="int" Mode="In" />
     <Parameter Name="TFSpilt" Type="int" Mode="In" />
   </Function>
-  <Function Name="setstbyadd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="add" Type="varchar" Mode="In" />
+  <Function Name="Ins_Teach_Courses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ins_Id" Type="int" Mode="In" />
   </Function>
-  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-    <Parameter Name="version" Type="int" Mode="In" />
-    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  <Function Name="InsCourseReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InsID" Type="int" Mode="In" />
   </Function>
-  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-    <Parameter Name="version" Type="int" Mode="In" />
-    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  <Function Name="Insert_Topic" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="T_Name" Type="varchar" Mode="In" />
+    <Parameter Name="c_ID" Type="int" Mode="In" />
   </Function>
-  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
+  <Function Name="InsertChoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="c_Id" Type="varchar" Mode="In" />
+    <Parameter Name="C_T" Type="varchar" Mode="In" />
+    <Parameter Name="Q_Id" Type="int" Mode="In" />
   </Function>
-  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
+  <Function Name="InsertInsCrs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ins_Id" Type="int" Mode="In" />
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
   </Function>
-  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
+  <Function Name="InsertInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InsID" Type="int" Mode="In" />
+    <Parameter Name="InsUserName" Type="varchar" Mode="In" />
+    <Parameter Name="InsPassword" Type="varchar" Mode="In" />
+    <Parameter Name="InsName" Type="varchar" Mode="In" />
+    <Parameter Name="InsEmail" Type="varchar" Mode="In" />
   </Function>
-  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-    <Parameter Name="owner_id" Type="int" Mode="In" />
-    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  <Function Name="InsertIntoTrack" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="N" Type="varchar" Mode="In" />
+    <Parameter Name="SID" Type="int" Mode="In" />
   </Function>
-  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="InsertQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Q_Ty" Type="varchar" Mode="In" />
+    <Parameter Name="Q_Tx" Type="varchar" Mode="In" />
+    <Parameter Name="Q_A" Type="varchar" Mode="In" />
+    <Parameter Name="C_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="InsertStudent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Q_Ty" Type="varchar" Mode="In" />
+    <Parameter Name="Q_Tx" Type="varchar" Mode="In" />
+    <Parameter Name="Q_A" Type="varchar" Mode="In" />
+    <Parameter Name="C_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="InsertStudentData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="St_ID" Type="int" Mode="In" />
+    <Parameter Name="St_Eml" Type="varchar" Mode="In" />
+    <Parameter Name="st_User" Type="varchar" Mode="In" />
+    <Parameter Name="St_Pass" Type="varchar" Mode="In" />
+    <Parameter Name="St_Nm" Type="varchar" Mode="In" />
+    <Parameter Name="St_Ag" Type="int" Mode="In" />
+    <Parameter Name="St_Trk" Type="int" Mode="In" />
+    <Parameter Name="St_Ldr" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Insructors_Teach_Course" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="inst_user_pass" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="InstructorCourseInfoReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ins_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModelAnswer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StudID" Type="int" Mode="In" />
+    <Parameter Name="ExamID" Type="int" Mode="In" />
+    <Parameter Name="QuesID" Type="int" Mode="In" />
+    <Parameter Name="StudAnswer" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Select_Ins_Crs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SelectAllStudentsIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SelectCourseTopicsReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectExam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectFromTrack" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InsID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectStudent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Std_Id" Type="int" Mode="In" />
+    <Parameter Name="Std_Nm" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SelectStudentById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Std_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectStudentByIdOrName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Std_Id" Type="int" Mode="In" />
+    <Parameter Name="Std_Nm" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SelectStudentExamAnswers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="st_id" Type="int" Mode="In" />
+    <Parameter Name="ex_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectStudentQuestionsAnswers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="st_id" Type="int" Mode="In" />
+    <Parameter Name="ex_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectStudents" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SelectTopics" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Crs_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectTrackCourses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowQuestionById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ques_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowQuestionChoices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ques_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowQuestionCorrectChoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ques_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowRandomQuestionInCourse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="std_courses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="stdid" Type="int" Mode="In" />
+  </Function>
   <Function Name="std_crs_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="stdid" Type="int" Mode="In" />
     <Parameter Name="crsid" Type="varchar" Mode="In" />
@@ -449,6 +581,84 @@
     <Parameter Name="stdid" Type="int" Mode="In" />
     <Parameter Name="crsid" Type="varchar" Mode="In" />
     <Parameter Name="Grade" Type="int" Mode="In" />
+  </Function>
+  <Function Name="std_crsname" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="stdid" Type="int" Mode="In" />
+    <Parameter Name="crsname" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="stud_user_pass" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="StudentAnswersInExamReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Exam_Id" Type="int" Mode="In" />
+    <Parameter Name="Std_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="StudentGradesReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Std_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="StudentInfoInDepartmentReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="track_crs_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="trackid" Type="int" Mode="In" />
+    <Parameter Name="courseid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="track_crs_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="trackid" Type="int" Mode="In" />
+    <Parameter Name="courseid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="track_crs_select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="trackid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateChoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChoiceId" Type="varchar" Mode="In" />
+    <Parameter Name="ques_Id" Type="int" Mode="In" />
+    <Parameter Name="UpdatedAns" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UpdateCourseTeachByIns" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+    <Parameter Name="Old_Ins_Id" Type="int" Mode="In" />
+    <Parameter Name="New_Ins_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateExamDuration" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Duration" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InsID" Type="int" Mode="In" />
+    <Parameter Name="InsUserName" Type="varchar" Mode="In" />
+    <Parameter Name="InsPassword" Type="varchar" Mode="In" />
+    <Parameter Name="InsName" Type="varchar" Mode="In" />
+    <Parameter Name="InsEmail" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UpdateInstructorCourse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ins_Id" Type="int" Mode="In" />
+    <Parameter Name="Old_Crs_Id" Type="int" Mode="In" />
+    <Parameter Name="New_Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateQuesyion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Q_Id" Type="int" Mode="In" />
+    <Parameter Name="Q_T" Type="varchar" Mode="In" />
+    <Parameter Name="Q_Tx" Type="varchar" Mode="In" />
+    <Parameter Name="Q_A" Type="varchar" Mode="In" />
+    <Parameter Name="Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateStudentData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="St_ID" Type="int" Mode="In" />
+    <Parameter Name="St_Eml" Type="varchar" Mode="In" />
+    <Parameter Name="st_User" Type="varchar" Mode="In" />
+    <Parameter Name="St_Pass" Type="varchar" Mode="In" />
+    <Parameter Name="St_Nm" Type="varchar" Mode="In" />
+    <Parameter Name="St_Ag" Type="int" Mode="In" />
+    <Parameter Name="St_Trk" Type="int" Mode="In" />
+    <Parameter Name="St_Ldr" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateTopic" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Old_Top_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Old_Crs_Id" Type="int" Mode="In" />
+    <Parameter Name="New_Top_Name" Type="varchar" Mode="In" />
+    <Parameter Name="New_Crs_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateTrack" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="N" Type="varchar" Mode="In" />
+    <Parameter Name="SID" Type="int" Mode="In" />
   </Function>
   <EntityContainer Name="ExaminationSystemModelStoreContainer">
     <EntitySet Name="Choice" EntityType="Self.Choice" Schema="dbo" store:Type="Tables" />

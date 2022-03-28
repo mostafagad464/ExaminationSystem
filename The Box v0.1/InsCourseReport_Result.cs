@@ -11,12 +11,9 @@ namespace The_Box_v0._1
 {
     using System;
     
-    public partial class sp_helpdiagrams_Result
+    public partial class InsCourseReport_Result
     {
-        public string Database { get; set; }
-        public string Name { get; set; }
-        public int ID { get; set; }
-        public string Owner { get; set; }
-        public int OwnerID { get; set; }
+        public string course { get; set; }
+        public Nullable<int> number_of_students { get; set; }
     }
 }

@@ -26,6 +26,18 @@ namespace The_Box_v0._1
         {
             InitializeComponent();
             loginPage = login;
+
+            foreach (Course course in examinationSystemEntities.Courses)
+            {
+
+                CourseIdOfExam.Items.Add(course.Course_Name);
+            };
+
+            foreach (Instructor instructor in examinationSystemEntities.Instructors)
+            {
+
+                instructorIDofExam.Items.Add(instructor.Ins_Name);
+            };
         }
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
@@ -75,7 +87,8 @@ namespace The_Box_v0._1
 
         private void GenerateExam_Click(object sender, EventArgs e)
         {
-            examinationSystemEntities.GenerateExam(int.Parse(IdOfExam.Text), int.Parse(instructorId.Text),int.Parse(textBox4.Text), int.Parse(idOfcourse.Text), int.Parse(mcqSpilt.Text), int.Parse(T_f_spilt.Text),Groupsbox,this);
+            
+            examinationSystemEntities.GenerateExam(int.Parse(IdOfExam.Text), (instructorIDofExam.Text),int.Parse(textBox4.Text), (CourseIdOfExam.Text), int.Parse(mcqSpilt.Text), int.Parse(T_f_spilt.Text),Groupsbox,this);
         }
 
         private void AddCourse_Click(object sender, EventArgs e)
@@ -84,6 +97,11 @@ namespace The_Box_v0._1
         }
 
         private void Courses_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CourseIdOfExam_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

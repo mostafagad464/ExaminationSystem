@@ -246,7 +246,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 270);
+            this.panel2.Size = new System.Drawing.Size(190, 466);
             this.panel2.TabIndex = 2;
             // 
             // InsertQ_label
@@ -384,7 +384,7 @@
             this.ImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImagePanel.Location = new System.Drawing.Point(0, 0);
             this.ImagePanel.Name = "ImagePanel";
-            this.ImagePanel.Size = new System.Drawing.Size(190, 270);
+            this.ImagePanel.Size = new System.Drawing.Size(190, 466);
             this.ImagePanel.TabIndex = 4;
             // 
             // MainImage
@@ -405,7 +405,7 @@
             this.LeftPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(82)))));
             this.LeftPanel.Location = new System.Drawing.Point(0, 78);
             this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(190, 324);
+            this.LeftPanel.Size = new System.Drawing.Size(190, 520);
             this.LeftPanel.TabIndex = 1;
             // 
             // SignoutBtn
@@ -417,7 +417,7 @@
             this.SignoutBtn.ForeColor = System.Drawing.Color.White;
             this.SignoutBtn.Image = global::The_Box_v0._1.Properties.Resources.logout;
             this.SignoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SignoutBtn.Location = new System.Drawing.Point(0, 270);
+            this.SignoutBtn.Location = new System.Drawing.Point(0, 466);
             this.SignoutBtn.Name = "SignoutBtn";
             this.SignoutBtn.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.SignoutBtn.Size = new System.Drawing.Size(190, 54);
@@ -437,7 +437,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 48);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(190, 402);
+            this.panel1.Size = new System.Drawing.Size(190, 598);
             this.panel1.TabIndex = 6;
             // 
             // HdrPanel
@@ -450,7 +450,7 @@
             this.HdrPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.HdrPanel.Location = new System.Drawing.Point(0, 0);
             this.HdrPanel.Name = "HdrPanel";
-            this.HdrPanel.Size = new System.Drawing.Size(807, 48);
+            this.HdrPanel.Size = new System.Drawing.Size(1078, 48);
             this.HdrPanel.TabIndex = 7;
             // 
             // CloseFormbtn
@@ -472,7 +472,7 @@
             this.CloseAppbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseAppbtn.Image = global::The_Box_v0._1.Properties.Resources.close__2_;
             this.CloseAppbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CloseAppbtn.Location = new System.Drawing.Point(774, 3);
+            this.CloseAppbtn.Location = new System.Drawing.Point(1045, 3);
             this.CloseAppbtn.Name = "CloseAppbtn";
             this.CloseAppbtn.Size = new System.Drawing.Size(28, 23);
             this.CloseAppbtn.TabIndex = 5;
@@ -486,7 +486,7 @@
             this.Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize.Image = global::The_Box_v0._1.Properties.Resources.minus;
             this.Minimize.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Minimize.Location = new System.Drawing.Point(706, 3);
+            this.Minimize.Location = new System.Drawing.Point(977, 3);
             this.Minimize.Name = "Minimize";
             this.Minimize.Size = new System.Drawing.Size(28, 23);
             this.Minimize.TabIndex = 4;
@@ -500,7 +500,7 @@
             this.MaximizeAppbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MaximizeAppbtn.Image = global::The_Box_v0._1.Properties.Resources.fullscreen;
             this.MaximizeAppbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.MaximizeAppbtn.Location = new System.Drawing.Point(740, 3);
+            this.MaximizeAppbtn.Location = new System.Drawing.Point(1011, 3);
             this.MaximizeAppbtn.Name = "MaximizeAppbtn";
             this.MaximizeAppbtn.Size = new System.Drawing.Size(28, 23);
             this.MaximizeAppbtn.TabIndex = 3;
@@ -517,12 +517,13 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(635, 474);
             this.MainPanel.TabIndex = 8;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
             // InstructorMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 450);
+            this.ClientSize = new System.Drawing.Size(1078, 646);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.HdrPanel);

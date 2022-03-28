@@ -1,6 +1,6 @@
 ﻿namespace The_Box_v0._1
 {
-    partial class MainForm
+    partial class StudentMainForm
     {
         /// <summary>
         /// Required designer variable.

@@ -77,6 +77,9 @@
     <Compile Include="Exam.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ExamQuestionsChoicesReport_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="GetChoiceOfQ_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -84,7 +87,16 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="HelperFunc.cs" />
+    <Compile Include="InsCourseReport_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Insructors_Teach_Course_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Instructor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorCourseInfoReport_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="instructorGUI\InsertQ.cs">
@@ -98,6 +110,12 @@
     </Compile>
     <Compile Include="instructorGUI\InstructorMainForm.Designer.cs">
       <DependentUpon>InstructorMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inst_user_pass_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ins_Teach_Courses_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -114,19 +132,64 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ModelAnswer_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Question.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+    <Compile Include="SelectCourseTopicsReport_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
+    <Compile Include="SelectExam_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectFromTrack_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectInstructor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStudentByIdOrName_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStudentById_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStudentExamAnswers_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStudentQuestionsAnswers_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStudents_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStudent_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectTopics_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Ins_Crs_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShowQuestionCorrectChoice_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="std_crsname_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="std_crs_select_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Student.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAnswersInExamReport_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentGradesReport_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="StudentGui\Coursescs.cs">
@@ -140,12 +203,6 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentGui\ColorDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentGui\ColorDialog.Designer.cs">
-      <DependentUpon>ColorDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentGui\StudentDetailsInfo.cs">
       <SubType>Form</SubType>
@@ -167,10 +224,16 @@
     <Compile Include="StudentGui\StudentGrades.Designer.cs">
       <DependentUpon>StudentGrades.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentInfoInDepartmentReport_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Student_Courses.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Student_Exam.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stud_user_pass_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ThemeColor.cs" />
@@ -191,9 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentGui\Coursescs.resx">
       <DependentUpon>Coursescs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentGui\ColorDialog.resx">
-      <DependentUpon>ColorDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentGui\StudentDetailsInfo.resx">
       <DependentUpon>StudentDetailsInfo.cs</DependentUpon>
@@ -334,8 +394,8 @@
     <None Include="Resources\Letter-Q-icon.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

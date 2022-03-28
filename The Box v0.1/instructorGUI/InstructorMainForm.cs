@@ -23,7 +23,7 @@ namespace The_Box_v0._1.instructorGUI
         {
             InitializeComponent();
         }
-        public InstructorMainForm(Login login)
+        public InstructorMainForm(Login login,Instructor ins )
         {
             InitializeComponent();
             loginPage = login;
@@ -141,6 +141,11 @@ namespace The_Box_v0._1.instructorGUI
         }
 
         private void QA_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

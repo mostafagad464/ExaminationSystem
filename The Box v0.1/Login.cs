@@ -12,21 +12,65 @@ namespace The_Box_v0._1
 {
     public partial class Login : Form
     {
+        ExaminationSystemEntities examinationSystemEntities;
         public Login()
         {
             InitializeComponent();
+            examinationSystemEntities = new ExaminationSystemEntities();
+
         }
 
         private void Log_In_Button_Click(object sender, EventArgs e)
         {
-            if(InsRadioBtn.Checked == true || StuRadioBtn.Checked == true)
+            if (InsRadioBtn.Checked == true)
             {
-                //MainForm mf = new MainForm(this);
-                //mf.Show();
-                //this.Hide();
-                instructorGUI.InstructorMainForm Imf = new instructorGUI.InstructorMainForm(this);
-                Imf.Show();
-                this.Hide();
+
+                Instructor ins = examinationSystemEntities.InstructorsAuthentication(UserNameText.Text, passwordText.Text);
+
+                if (ins!=null)
+                {
+                    instructorGUI.InstructorMainForm Imf = new instructorGUI.InstructorMainForm(this,ins);
+                    Imf.Show();
+                    this.Hide();
+                    //   Console.WriteLine(examinationSystemEntities.ComputeSha256Hash(passwordText.Text));
+                }
+                else
+                {
+
+                    MessageBox.Show("Wrong Password .... try again ! ");
+                }
+
+
+
+       
+
+              
+            }
+
+           else  if (StuRadioBtn.Checked == true)
+            {
+
+                Student std = examinationSystemEntities.Studentuthentication(UserNameText.Text, passwordText.Text);
+                if (std != null)
+                {   
+                    StudentMainForm   stdForm= new StudentMainForm(this,std);
+
+
+                    stdForm.Show();
+                    this.Hide();
+                    //   Console.WriteLine(examinationSystemEntities.ComputeSha256Hash(passwordText.Text));
+                }
+                else
+                {
+
+                    MessageBox.Show("Wrong Password .... try again ! ");
+                }
+
+
+
+
+
+
             }
             else if(AdminRadioBtn.Checked == true)
             {

@@ -51,5 +51,10 @@ namespace The_Box_v0._1.instructorGUI
 
             }
         }
+
+        private void InsertQ_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
